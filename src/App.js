@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import BT3Header from './components/BT3Header'
+import BT3Sidebar from './components/BT3Sidebar'
+import BT3Content from './components/BT3Content'
+import BT3Footer from './components/BT3Footer'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <BT3Header />
+        <div className="row">
+          <BT3Sidebar />
+          <BT3Content />
+        </div>
+        <BT3Footer />
+      </div>
+    )
+  }
 }
-
-export default App;

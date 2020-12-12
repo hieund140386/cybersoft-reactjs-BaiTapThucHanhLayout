@@ -1,0 +1,5 @@
+.bt3-product-card {
+  box-sizing: border-box;
+  margin: 0 10px 5px;
+  max-width: calc(33.333% - 20px);
+}
